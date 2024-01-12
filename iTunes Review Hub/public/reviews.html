@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews for <!--SONG_NAME_PLACEHOLDER--></title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+    <h2>Reviews for <span id="songName"><!--SONG_NAME_PLACEHOLDER--></span></h2>
+    <div id="previousReviews"><!--REVIEW_PLACEHOLDER--></div>
+    
+    <form action="/submitReview" method="post">
+        <input type="hidden" name="songName" value=`${songName}`>
+        <input type="hidden" name="userId" value='Review'>
+        <textarea id="reviewText" name="reviewText" placeholder="Write a review"></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>
